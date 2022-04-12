@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>ToDo APP</title>
+  </head>
+  <body>
+    <div class="container p-3">
+        <h1 class="app-title" id="header">ToDo APP</h1>
+        <div class="card">
+            <div class="card-header text-white bg-secondary mb-3">New Task</div>
+            <div class="card-body mx-sm-3 mb-2">
+                <form>
+                    <div class="form-row">
+                      <div class="col-11">
+                        <input type="text" class="form-control" id="addTask" placeholder="Please Enter Your Task.">
+                      </div>
+                      <div class="col">
+                        <button type="submit" class="btn btn-primary" id="addbtn">+</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+
+            <div class="card-header text-white bg-secondary mb-3">Task List 
+                <button class="btn btn-outline-warning float-right btn-delete-all" id="dltAll">Delete All</button> 
+            </div>
+            <div class="card-body mx-sm-3 mb-2">
+                <ul class="list-group" id="taskList">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
