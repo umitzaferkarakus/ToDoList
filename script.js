@@ -7,6 +7,7 @@ const btnDltAll = document.querySelector("#dltAll");
 
 const taskList = document.querySelector("#taskList");
 
+
 // Call Function
 eventListeners();
 
@@ -48,9 +49,10 @@ function dltAll(e){
     }
 
 }
-
+// Remove An Item
 function dltItem(e){
-
-
+    if(e.target.className === "delete-item float-right"){
+        e.target.parentElement.remove();
+    }
     e.preventDefault();
 }
